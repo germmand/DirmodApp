@@ -102,4 +102,3 @@
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/AutoMapper.dll
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
