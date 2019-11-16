@@ -13,10 +13,26 @@
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="DirmodAPI.Core" t="IncludeRecursive">
-        <e p="Class1.cs" t="Include" />
+        <e p="DTOs" t="Include">
+          <e p="QuotationResponseDTO.cs" t="Include" />
+        </e>
         <e p="DirmodAPI.Core.csproj" t="IncludeRecursive" />
+        <e p="Exceptions" t="Include">
+          <e p="CambioTodayAPIException.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
+          <e p="HttpErrorModel.cs" t="Include" />
           <e p="QuotesModel.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="ICambioTodayService.cs" t="Include" />
+        </e>
+        <e p="Settings" t="Include">
+          <e p="CambioTodaySettings.cs" t="Include" />
+        </e>
+        <e p="Wrappers" t="Include">
+          <e p="HttpClientWrapper.cs" t="Include" />
+          <e p="IHttpClientWrapper.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -41,12 +57,21 @@
       </e>
       <e p="DirmodAPI.Web" t="IncludeRecursive">
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="QuotationController.cs" t="Include" />
         </e>
         <e p="DirmodAPI.Web.csproj" t="IncludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="CurrencyMapper.cs" t="Include" />
+        </e>
+        <e p="Profiles" t="Include">
+          <e p="QuotationProfile.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CambioTodayService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />

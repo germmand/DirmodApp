@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using DirmodAPI.Core.Services;
+using DirmodAPI.Core.Settings;
+using DirmodAPI.Core.Wrappers;
+using DirmodAPI.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +31,14 @@ namespace DirmodAPI.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.Configure<CambioTodaySettings>(Configuration.GetSection("CambioToday"));
+            services.AddHttpClient("cambio.today", c =>
+            {
+                c.BaseAddress = new Uri("https://api.cambio.today/v1/");
+            });
+            services.AddScoped<ICambioTodayService, CambioTodayService>();
+            services.AddScoped<IHttpClientWrapper, HttpClientWrapper>();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

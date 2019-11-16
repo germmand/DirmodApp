@@ -7,6 +7,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("c46e5cd3-598e-4e02-8bb8-114a35ae9942")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DirmodAPI.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

@@ -1,0 +1,8 @@
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/bin/Debug/netcoreapp3.0/DirmodAPI.Core.deps.json
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/bin/Debug/netcoreapp3.0/DirmodAPI.Core.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/bin/Debug/netcoreapp3.0/DirmodAPI.Core.pdb
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.csprojAssemblyReference.cache
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.AssemblyInfoInputs.cache
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.AssemblyInfo.cs
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.pdb
