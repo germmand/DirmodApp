@@ -1,0 +1,84 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DirmodAPI.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DirmodAPI.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DirmodAPI.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DirmodAPI.Core/1.0.0": {
+      "type": "project",
+      "path": "../DirmodAPI.Core/DirmodAPI.Core.csproj",
+      "msbuildProject": "../DirmodAPI.Core/DirmodAPI.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "DirmodAPI.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/germmand/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Web/DirmodAPI.Web.csproj",
+      "projectName": "DirmodAPI.Web",
+      "projectPath": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Web/DirmodAPI.Web.csproj",
+      "packagesPath": "/home/germmand/.nuget/packages/",
+      "outputPath": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Web/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/home/germmand/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/DirmodAPI.Core.csproj": {
+              "projectPath": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/DirmodAPI.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

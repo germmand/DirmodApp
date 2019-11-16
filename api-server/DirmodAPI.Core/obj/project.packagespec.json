@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/DirmodAPI.Core.csproj",
+    "projectName": "DirmodAPI.Core",
+    "projectPath": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/DirmodAPI.Core.csproj",
+    "outputPath": "/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Core/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
