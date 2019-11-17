@@ -8,13 +8,3 @@
     flex-direction: column;
     height: 100vh;
 }
-
-.quotations-panel {
-    width: 50%;
-}
-
-@media only screen and (max-width: 600px) {
-    .quotations-panel {
-        width: 98%;
-    }
-}
