@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7948d669-4dea-4b32-8867-30bbdca78eb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DirmodAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DirmodAPI/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DirmodAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DirmodAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Core/obj/Debug/netcoreapp3.0/DirmodAPI.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Core/obj/DirmodAPI.Core.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Core/obj/DirmodAPI.Core.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Core/obj/DirmodAPI.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Core/obj/DirmodAPI.Core.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/DirmodAPI.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/DirmodAPI.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/DirmodAPI.Tests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/Services/CambioTodayService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/Services/CambioTodayService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/bin/Debug/netcoreapp3.0/DirmodAPI.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/bin/Debug/netcoreapp3.0/DirmodAPI.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/bin/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/bin/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/Debug/netcoreapp3.0/DirmodAPI.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/DirmodAPI.Web.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/DirmodAPI.Web.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/DirmodAPI.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/DirmodAPI.Web.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.Web/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirmodAPI.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DirmodAPI.sln.DotSettings.user" afterDir="false" />
-    </list>
+    <list default="true" id="7948d669-4dea-4b32-8867-30bbdca78eb0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +13,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DirmodAPI.Tests/Controllers/QuotationControllerTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
               <folding>
-                <marker date="1573956674821" expanded="true" signature="6:309" ph="..." />
-                <marker date="1573956674821" expanded="true" signature="348:3085" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="392:3083" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="429:3077" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="633:836" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="921:1650" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="1019:1118" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="1739:2476" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="1870:1956" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="2571:3067" ph="{...}" />
-                <marker date="1573956674821" expanded="true" signature="2702:2788" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="6:309" ph="..." />
+                <marker date="1573956944889" expanded="true" signature="348:3402" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="392:3400" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="429:3394" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="633:836" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="921:1650" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="1019:1118" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="1739:2476" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="1870:1956" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="2571:3384" ph="{...}" />
+                <marker date="1573956944889" expanded="true" signature="2702:2788" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -214,12 +181,12 @@
       <updated>1573859113228</updated>
       <workItem from="1573859116053" duration="566000" />
       <workItem from="1573860294267" duration="67000" />
-      <workItem from="1573929739059" duration="26110000" />
+      <workItem from="1573929739059" duration="26548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26743000" />
+    <option name="totallyTimeSpent" value="27181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,7 +199,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17716116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -734,20 +700,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DirmodAPI.Tests/Controllers/QuotationControllerTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
           <folding>
-            <marker date="1573956674821" expanded="true" signature="6:309" ph="..." />
-            <marker date="1573956674821" expanded="true" signature="348:3085" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="392:3083" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="429:3077" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="633:836" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="921:1650" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="1019:1118" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="1739:2476" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="1870:1956" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="2571:3067" ph="{...}" />
-            <marker date="1573956674821" expanded="true" signature="2702:2788" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="6:309" ph="..." />
+            <marker date="1573956944889" expanded="true" signature="348:3402" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="392:3400" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="429:3394" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="633:836" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="921:1650" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="1019:1118" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="1739:2476" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="1870:1956" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="2571:3384" ph="{...}" />
+            <marker date="1573956944889" expanded="true" signature="2702:2788" ph="{...}" />
           </folding>
         </state>
       </provider>
