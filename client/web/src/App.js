@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Button variant="primary">Dont click me!</Button>
       <FlagIcon code="BRL" size={50} />
+      <p>EUR - €45.56</p>
     </div>
   );
 }

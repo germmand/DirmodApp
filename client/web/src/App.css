@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone&display=swap');
+
 .App {
+    font-family: 'antic didone', serif;
     display: flex;
     justify-content: center;
     align-items: center;
