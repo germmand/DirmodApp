@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuotationPanel Component should match snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    <div
+      className="panel"
+    >
+      <div
+        className="flag-code-container"
+      >
+        <img
+          alt="USD"
+          src="US.svg"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": "55px",
+              "width": "55px",
+            }
+          }
+        />
+        <span
+          className="text-bold"
+        >
+           
+          USD
+        </span>
+      </div>
+      <div>
+        <span
+          className="text-bold"
+        >
+          $
+        </span>
+        <span
+          className="text-bold"
+        >
+           
+          45.55
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

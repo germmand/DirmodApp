@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
 
-import Button from 'react-bootstrap/Button';
-
-import FlagIcon from './components/FlagIcon';
-
+import QuotationPanel from './components/QuotationPanel';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="primary">Dont click me!</Button>
-      <FlagIcon code="BRL" size={50} />
-      <p>EUR - €45.56</p>
+      <div className="quotations-panel">
+        <QuotationPanel code="BRL" symbol="R$" quotation={45.56} isRefreshing={!true} />
+        <QuotationPanel code="USD" symbol="$" quotation={35.48} isRefreshing />
+        <QuotationPanel code="EUR" symbol="€" quotation={10.99} isRefreshing={!true} />
+      </div>
     </div>
   );
 }
