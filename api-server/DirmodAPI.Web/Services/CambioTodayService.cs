@@ -18,7 +18,7 @@ namespace DirmodAPI.Web.Services
     public class CambioTodayService : ICambioTodayService
     {
         // This is made public for unit-testing purposes.
-        public readonly string CAMBIOTODAYAPI_ERROR_MESSAGE = "Something went wrong contacting the CambioToday API";
+        public static readonly string CAMBIOTODAYAPI_ERROR_MESSAGE = "Something went wrong contacting the CambioToday API";
         
         private readonly IHttpClientFactory _clientFactory;
         private readonly IHttpClientWrapper _clientWrapper;

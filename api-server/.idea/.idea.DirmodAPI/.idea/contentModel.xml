@@ -44,9 +44,15 @@
         </e>
       </e>
       <e p="DirmodAPI.Tests" t="IncludeRecursive">
+        <e p="Controllers" t="Include">
+          <e p="QuotationControllerTests.cs" t="Include" />
+        </e>
         <e p="DirmodAPI.Tests.csproj" t="IncludeRecursive" />
         <e p="Helpers" t="Include">
           <e p="CurrencyMapperTests.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CambioTodayServiceTests.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

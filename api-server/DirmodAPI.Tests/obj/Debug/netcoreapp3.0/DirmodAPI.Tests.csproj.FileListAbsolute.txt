@@ -102,3 +102,9 @@
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/obj/Debug/netcoreapp3.0/DirmodAPI.Tests.pdb
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/AutoMapper.dll
 /home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/Castle.Core.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/FluentAssertions.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/Moq.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
+/home/germmand/Desktop/DirmodPOC/api-server/DirmodAPI.Tests/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
