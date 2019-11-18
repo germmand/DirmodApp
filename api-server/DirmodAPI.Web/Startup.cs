@@ -25,6 +25,8 @@ namespace DirmodAPI.Web
             Configuration = configuration;
         }
 
+        private readonly string AllowAllOriginsPolicy = "_AllowAllOriginsPolicy";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -39,6 +41,15 @@ namespace DirmodAPI.Web
             services.AddScoped<ICambioTodayService, CambioTodayService>();
             services.AddScoped<IHttpClientWrapper, HttpClientWrapper>();
             services.AddAutoMapper(typeof(Startup));
+            services.AddCors(options =>
+            {
+                options.AddPolicy(AllowAllOriginsPolicy, builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                }); 
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +60,7 @@ namespace DirmodAPI.Web
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(AllowAllOriginsPolicy);
             app.UseHttpsRedirection();
 
             app.UseRouting();
