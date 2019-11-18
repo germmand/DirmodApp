@@ -58,10 +58,13 @@ namespace DirmodAPI.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            } 
+            else 
+            {
+                app.UseHttpsRedirection();
             }
 
             app.UseCors(AllowAllOriginsPolicy);
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 

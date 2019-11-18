@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './main.page.css';
+import QuotationService from '../../services/quotation.service';
 
 import QuotationPanel from '../../components/QuotationPanel';
 
@@ -11,7 +12,7 @@ class MainPage extends React.Component {
       currencies: [{
         code: "BRL",
         quotation: 0.00,
-        symbol: "R$"
+        symbol: "$"
       }, {
         code: "USD",
         quotation: 0.00,
@@ -19,10 +20,38 @@ class MainPage extends React.Component {
       }, {
         code: "EUR",
         quotation: 0.00,
-        symbol: "€"
+        symbol: "$"
       }],
-      isRefreshing: false,
+      isRefreshing: true,
     };
+  }
+
+  onUpdateCurrencies = (currenciesUpdated) => {
+    const { currencies } = this.state;
+    const updatedCurrenciesForState = currencies.map(c => {
+      const currency = currenciesUpdated.find(uc => uc.currency === c.code);
+      return {
+        ...c,
+        // Round to two decimals if necessary.
+        quotation: Number(Math.round(currency.price + 'e2') + 'e-2'),
+      };
+    });
+    this.setState(state => {
+      return {
+        ...state,
+        currencies: updatedCurrenciesForState,
+        isRefreshing: false,
+      };
+    });
+  }
+
+  async componentDidMount() {
+    const [usdRes, eurRes, brlRes] = await Promise.all([
+      QuotationService.getQuotation('dolar'),
+      QuotationService.getQuotation('euro'),
+      QuotationService.getQuotation('real')
+    ]);
+    this.onUpdateCurrencies([usdRes, eurRes, brlRes]);
   }
 
   render() {
