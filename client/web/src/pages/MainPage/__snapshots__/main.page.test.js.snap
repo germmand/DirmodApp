@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage Component should match snapshot 1`] = `
+<div
+  className="quotations-panel"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="panel"
+      >
+        <div
+          className="flag-code-container"
+        >
+          <img
+            alt="BRL"
+            src="BR.svg"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "55px",
+                "width": "55px",
+              }
+            }
+          />
+          <span
+            className="text-bold"
+          >
+             
+            BRL
+          </span>
+        </div>
+        <div
+          className="spinner-border"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="panel"
+      >
+        <div
+          className="flag-code-container"
+        >
+          <img
+            alt="USD"
+            src="US.svg"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "55px",
+                "width": "55px",
+              }
+            }
+          />
+          <span
+            className="text-bold"
+          >
+             
+            USD
+          </span>
+        </div>
+        <div
+          className="spinner-border"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="panel"
+      >
+        <div
+          className="flag-code-container"
+        >
+          <img
+            alt="EUR"
+            src="EU.svg"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "55px",
+                "width": "55px",
+              }
+            }
+          />
+          <span
+            className="text-bold"
+          >
+             
+            EUR
+          </span>
+        </div>
+        <div
+          className="spinner-border"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

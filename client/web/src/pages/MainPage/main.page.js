@@ -24,34 +24,49 @@ class MainPage extends React.Component {
       }],
       isRefreshing: true,
     };
+    this._isMounted = false;
   }
 
-  onUpdateCurrencies = (currenciesUpdated) => {
+  async componentDidMount() {
+    this._isMounted = true;
+    try {
+      const [usdRes, eurRes, brlRes] = await Promise.all([
+        QuotationService.getQuotation('dolar'),
+        QuotationService.getQuotation('euro'),
+        QuotationService.getQuotation('real')
+      ]);
+      this.onUpdateCurrencies([usdRes, eurRes, brlRes]);
+    } catch(e) {
+      // This try-catch block is placed here in order to
+      // prevent UnhandledPromiseRejection exception when unit-testing.
+      // -----
+      // Here should also be handled the API-related errors.
+    }
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
+  onUpdateCurrencies(currenciesUpdated) {
     const { currencies } = this.state;
     const updatedCurrenciesForState = currencies.map(c => {
       const currency = currenciesUpdated.find(uc => uc.currency === c.code);
       return {
         ...c,
         // Round to two decimals if necessary.
-        quotation: Number(Math.round(currency.price + 'e2') + 'e-2'),
+        quotation: Number(`${Math.round(`${currency.price  }e2`)  }e-2`),
       };
     });
-    this.setState(state => {
-      return {
-        ...state,
-        currencies: updatedCurrenciesForState,
-        isRefreshing: false,
-      };
-    });
-  }
-
-  async componentDidMount() {
-    const [usdRes, eurRes, brlRes] = await Promise.all([
-      QuotationService.getQuotation('dolar'),
-      QuotationService.getQuotation('euro'),
-      QuotationService.getQuotation('real')
-    ]);
-    this.onUpdateCurrencies([usdRes, eurRes, brlRes]);
+    if(this._isMounted) {
+      this.setState(state => {
+        return {
+          ...state,
+          currencies: updatedCurrenciesForState,
+          isRefreshing: false,
+        };
+      });
+    }
   }
 
   render() {
