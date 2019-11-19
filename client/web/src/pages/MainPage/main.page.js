@@ -23,6 +23,7 @@ class MainPage extends React.Component {
         symbol: "$"
       }],
       isRefreshing: true,
+      refreshingCounter: 5,
     };
     this._isMounted = false;
   }
@@ -70,21 +71,28 @@ class MainPage extends React.Component {
   }
 
   render() {
-    const { currencies, isRefreshing } = this.state;
+    const { currencies, isRefreshing, refreshingCounter } = this.state;
 
     return (
-      <div className="quotations-panel">
-        {
-          currencies.map(c => (
-            <QuotationPanel
-              key={c.code}
-              code={c.code}
-              symbol={c.symbol}
-              isRefreshing={isRefreshing}
-              quotation={c.quotation}
-            />
-          ))
-        }
+      <div className="container">
+        <div className="quotations-panel">
+          {
+            currencies.map(c => (
+              <QuotationPanel
+                key={c.code}
+                code={c.code}
+                symbol={c.symbol}
+                isRefreshing={isRefreshing}
+                quotation={c.quotation}
+              />
+            ))
+          }
+        </div>
+        <div className="spinner-container">
+          <div className="spinner">
+          </div>
+          <span className="spinner-text">{ refreshingCounter }</span>
+        </div>
       </div>
     );
   }
