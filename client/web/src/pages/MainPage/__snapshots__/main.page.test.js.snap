@@ -2,115 +2,131 @@
 
 exports[`MainPage Component should match snapshot 1`] = `
 <div
-  className="quotations-panel"
+  className="container"
 >
   <div
-    className="card"
+    className="quotations-panel"
   >
     <div
-      className="card-body"
+      className="card"
     >
       <div
-        className="panel"
+        className="card-body"
       >
         <div
-          className="flag-code-container"
+          className="panel"
         >
-          <img
-            alt="BRL"
-            src="BR.svg"
-            style={
-              Object {
-                "display": "inline-block",
-                "height": "55px",
-                "width": "55px",
-              }
-            }
-          />
-          <span
-            className="text-bold"
+          <div
+            className="flag-code-container"
           >
-             
-            BRL
-          </span>
+            <img
+              alt="BRL"
+              src="BR.svg"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "height": "55px",
+                  "width": "55px",
+                }
+              }
+            />
+            <span
+              className="text-bold"
+            >
+               
+              BRL
+            </span>
+          </div>
+          <div
+            className="spinner-border"
+          />
         </div>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
         <div
-          className="spinner-border"
-        />
+          className="panel"
+        >
+          <div
+            className="flag-code-container"
+          >
+            <img
+              alt="USD"
+              src="US.svg"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "height": "55px",
+                  "width": "55px",
+                }
+              }
+            />
+            <span
+              className="text-bold"
+            >
+               
+              USD
+            </span>
+          </div>
+          <div
+            className="spinner-border"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
+        <div
+          className="panel"
+        >
+          <div
+            className="flag-code-container"
+          >
+            <img
+              alt="EUR"
+              src="EU.svg"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "height": "55px",
+                  "width": "55px",
+                }
+              }
+            />
+            <span
+              className="text-bold"
+            >
+               
+              EUR
+            </span>
+          </div>
+          <div
+            className="spinner-border"
+          />
+        </div>
       </div>
     </div>
   </div>
   <div
-    className="card"
+    className="spinner-container"
   >
     <div
-      className="card-body"
+      className="spinner"
+    />
+    <span
+      className="spinner-text"
     >
-      <div
-        className="panel"
-      >
-        <div
-          className="flag-code-container"
-        >
-          <img
-            alt="USD"
-            src="US.svg"
-            style={
-              Object {
-                "display": "inline-block",
-                "height": "55px",
-                "width": "55px",
-              }
-            }
-          />
-          <span
-            className="text-bold"
-          >
-             
-            USD
-          </span>
-        </div>
-        <div
-          className="spinner-border"
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="card"
-  >
-    <div
-      className="card-body"
-    >
-      <div
-        className="panel"
-      >
-        <div
-          className="flag-code-container"
-        >
-          <img
-            alt="EUR"
-            src="EU.svg"
-            style={
-              Object {
-                "display": "inline-block",
-                "height": "55px",
-                "width": "55px",
-              }
-            }
-          />
-          <span
-            className="text-bold"
-          >
-             
-            EUR
-          </span>
-        </div>
-        <div
-          className="spinner-border"
-        />
-      </div>
-    </div>
+      0
+    </span>
   </div>
 </div>
 `;
