@@ -40,7 +40,7 @@ namespace DirmodAPI.Web.Services
         { 
             var client = _clientFactory.CreateClient("cambio.today");
             var url = 
-                $"quotes/{CurrencyMapper.Map(currency)}/ARS/json?quantity=1&key={_cambioTodaySettings.ServiceApiKey}";
+                $"quotes/{CurrencyMapper.Map(currency)}/ARS/json?quantity=1&key={_cambioTodaySettings.Key}";
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             var response = await _clientWrapper.SendAsync(client, request);
             if (!response.IsSuccessStatusCode)

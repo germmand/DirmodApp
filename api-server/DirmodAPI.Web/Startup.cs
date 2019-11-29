@@ -33,7 +33,7 @@ namespace DirmodAPI.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.Configure<CambioTodaySettings>(Configuration.GetSection("CambioToday"));
+            services.Configure<CambioTodaySettings>(Configuration.GetSection("CAMBIOTODAY"));
             services.AddHttpClient("cambio.today", c =>
             {
                 c.BaseAddress = new Uri("https://api.cambio.today/v1/");
@@ -51,7 +51,7 @@ namespace DirmodAPI.Web
                 }); 
             });
         }
-
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

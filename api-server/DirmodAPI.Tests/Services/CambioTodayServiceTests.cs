@@ -33,7 +33,7 @@ namespace DirmodAPI.Tests.Services
             {
                 _settings = new CambioTodaySettings()
                 {
-                    ServiceApiKey = "dummy_api_key",
+                    Key = "dummy_api_key",
                 };
                 
                 _mapperMock          = new Mock<IMapper>();
@@ -73,7 +73,7 @@ namespace DirmodAPI.Tests.Services
             {
                 string currency = "dolar";
                 var client = new HttpClient();
-                var expectedUrl = $"quotes/USD/ARS/json?quantity=1&key={_settings.ServiceApiKey}";
+                var expectedUrl = $"quotes/USD/ARS/json?quantity=1&key={_settings.Key}";
                 var expectedRequest = new HttpRequestMessage(HttpMethod.Get, expectedUrl);
                 var responseMock = new HttpResponseMessage()
                 {

@@ -21,6 +21,10 @@ namespace DirmodAPI.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                })
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.AddEnvironmentVariables(prefix: "DIRMODAPI_");
                 });
     }
 }
