@@ -1,0 +1,77 @@
+version: 2.1
+
+aliases:
+  api-working-directory: &api_working_directory
+    ./api-server
+  webclient-working-directory: &webclient_working_directory
+    ./client/web
+  webclient-cache-key: &webclient_cache_key
+    dependecy-cache-v1-webclient-{{ .Branch }}-{{ checksum "./client/web/yarn.lock" }}
+
+executors:
+  netcore-executor:
+    docker:
+        - image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  node-executor:
+    docker:
+        - image: circleci/node:10.17.0-browsers
+
+jobs:
+  build-api:
+    executor: netcore-executor
+    steps:
+      - checkout
+      - run:
+          name: Restore API Packages.
+          command: |
+            dotnet restore 
+          working_directory: *api_working_directory
+      - run: 
+          name: Build API (Release).
+          command: |
+            dotnet build --no-restore --configuration Release
+          working_directory: *api_working_directory
+      - run: 
+          name: Run API Test-suite.
+          command: |
+            dotnet test --no-build --configuration Release
+          working_directory: *api_working_directory
+      - run:
+          name: Package (Publish) API binaries/assemblies.
+          command: |
+            dotnet publish ./DirmodAPI.Web/DirmodAPI.Web.csproj --no-build --configuration Release
+          working_directory: *api_working_directory
+
+  build-webclient:
+    executor: node-executor
+    steps:
+      - checkout
+      - restore_cache:
+          key: *webclient_cache_key
+      - run:
+          name: Restore Node Modules.
+          command: |
+            yarn install
+          working_directory: *webclient_working_directory
+      - save_cache:
+          key: *webclient_cache_key
+          paths:
+            - ./client/web/node_modules
+      - run:
+          name: Run Webclient Test suite.
+          command: |
+            yarn test
+          working_directory: *webclient_working_directory
+      - run:
+          name: Build/Bundle Webclient files.
+          command: |
+            yarn build
+          working_directory: *webclient_working_directory
+
+workflows:
+  api-workflow:
+    jobs:
+      - build-api
+  webclient-workflow:
+    jobs:
+      - build-webclient
