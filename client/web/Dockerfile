@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn
 COPY . ./
+ARG REACT_APP_DIRMOD_API_DOMAIN
 RUN yarn build
 
 # Stage 2: The production environment.
