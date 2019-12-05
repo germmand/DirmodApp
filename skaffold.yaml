@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1
+kind: Config
+metadata:
+  name: dirmodpoc
+build:
+  artifacts:
+  - image: dirmodapiservice
+    context: api-server
+deploy:
+  kubectl:
+    manifests:
+    - ./k8s-manifests/*.yaml

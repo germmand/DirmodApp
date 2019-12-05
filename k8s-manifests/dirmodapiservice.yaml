@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cambiotoday-secret-key
+  namespace: default
+type: Opaque
+stringData:
+  ct-key: <ct_key_here>
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dirmodapi-deployment
+  labels:
+    app: dirmodapi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dirmodapi-pod
+  template:
+    metadata:
+      labels:
+        app: dirmodapi-pod
+    spec:
+      containers:
+        - name: apiserver
+          image: dirmodapiservice
+          ports:
+            - containerPort: 5050
+          env:
+            - name: DIRMODAPI_CAMBIOTODAY__KEY
+              valueFrom:
+                secretKeyRef:
+                  name: cambiotoday-secret-key
+                  key: ct-key
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dirmodlbservice
+spec:
+  selector:
+    app: dirmodapi-pod
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      name: http
+      port: 5050
+      targetPort: 5050
+      nodePort: 30001
