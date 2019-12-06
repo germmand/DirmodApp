@@ -4,9 +4,12 @@ metadata:
   name: dirmodpoc
 build:
   artifacts:
-  - image: dirmodapiservice
+  - image: germmand/dirmodapi
     context: api-server
 deploy:
-  kubectl:
-    manifests:
-    - ./k8s-manifests/*.yaml
+  helm:
+    releases:
+      - name: dirmodapiservice-chart
+        chartPath: chart/dirmodapp/charts/dirmodapiservice
+        values:
+          image: germmand/dirmodapi
