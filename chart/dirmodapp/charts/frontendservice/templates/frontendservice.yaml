@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dirmodwebapp-deployment
+  labels:
+    app: dirmodwebapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dirmodwebapp-pod
+  template:
+    metadata:
+      labels:
+        app: dirmodwebapp-pod
+    spec:
+      containers:
+        - name: react-webapp
+          image: {{ .Values.image }}
+          ports:
+            - containerPort: 80
+          env:
+              # The reason why I hard-coded this IP here is because 
+              # the react app is served as a js file to the browser.
+              # And since the browser is the one sending the requests to the backend,
+              # (and the browser is by any means not inside of the cluster network),
+              # an external ip (and port) has to be used to reach the cluster backend services.
+              # If the frontend was server-side rendered, a ClusterIP service exposing the backend pods
+              # could be used and this value would be something like: 'backendservice:5050'.
+              # In a real world case, this would be an actual domain.
+              # And why this ip especifically? Because I'm testing this using Minikube.
+              # And this is the default IP Minikube creates to expose services externally.
+              # And why that port? Because there's a backend service listening to that port in the cluster.
+            - name: REACT_APP_DIRMOD_API_DOMAIN
+              value: http://192.168.99.101:30001/api/v1/
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dirmodlbwebappservice
+spec:
+  selector:
+    app: dirmodwebapp-pod
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      name: http
+      port: 80
+      targetPort: 80
+      nodePort: 30002

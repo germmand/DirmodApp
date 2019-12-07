@@ -6,3 +6,5 @@ version: 0.1.0
 dependencies:
   - name: dirmodapiservice
     repository: file://charts/dirmodapiservice
+  - name: frontendservice
+    repository: file://charts/frontendservice

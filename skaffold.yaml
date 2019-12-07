@@ -6,6 +6,8 @@ build:
   artifacts:
   - image: germmand/dirmodapi
     context: api-server
+  - image: germmand/dirmodwebapp
+    context: client/web
 deploy:
   helm:
     releases:
@@ -13,3 +15,7 @@ deploy:
         chartPath: chart/dirmodapp/charts/dirmodapiservice
         values:
           image: germmand/dirmodapi
+      - name: frontendservice-chart
+        chartPath: chart/dirmodapp/charts/frontendservice
+        values:
+          image: germmand/dirmodwebapp
