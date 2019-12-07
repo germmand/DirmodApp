@@ -5,16 +5,16 @@ services:
     build:
       context: ./client/web
       dockerfile: Dockerfile
-      args:
-          # The reason why we need to use localhost here instead of 'webapi'
-          # is because the react app is served from a container as a js script file to the browser.
-          # And since the browser is the one sending the requests to the backend,
-          # (and the browser is by any means not inside the docker network), the outer port (and host) mapping must be used
-          # to reach the backend.
-        - REACT_APP_DIRMOD_API_DOMAIN=http://localhost:5050/api/v1/
     image: dirmod-webapp
     ports:
       - "3030:80"
+    environment:
+      # The reason why we need to use localhost here instead of 'webapi'
+      # is because the react app is served from a container as a js script file to the browser.
+      # And since the browser is the one sending the requests to the backend,
+      # (and the browser is by any means not inside the docker network), the outer port (and host) mapping must be used
+      # to reach the backend.
+      - REACT_APP_DIRMOD_API_DOMAIN=http://localhost:5050/api/v1/
     depends_on:
       - webapi
     networks:
