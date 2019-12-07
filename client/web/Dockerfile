@@ -4,12 +4,15 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn
 COPY . ./
-ARG REACT_APP_DIRMOD_API_DOMAIN
+# ARG REACT_APP_DIRMOD_API_DOMAIN
 RUN yarn build
 
 # Stage 2: The production environment.
 FROM nginx:alpine
-COPY --from=react-build /app/build /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
+COPY --from=react-build /app/build .
 COPY conf/nginx.conf /etc/nginx/conf.d/default.conf
+COPY env.sh .env ./
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+RUN apk add --no-cache bash && chmod +x env.sh
+CMD ["/bin/bash", "-c", "/usr/share/nginx/html/env.sh && nginx -g \"daemon off;\""]

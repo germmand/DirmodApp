@@ -27,6 +27,3 @@ do
 done < .env
 
 echo "}" >> ./env-config.js
-
-# Moving result into public folder so values can be injected at runtime.
-mv env-config.js ./public/
